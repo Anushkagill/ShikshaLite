@@ -3,10 +3,15 @@ import LoginPage from "../components/LoginPage"
 import TeacherDashboard from "../components/TeacherDashboard"
 import StudentDashboard from "../components/StudentDashboard"
 import LiveClassPage from "../components/LiveClassPage"
+import LandingPage from "../components/LandingPage"
 
 export default function ShikshaLite() {
-  const [currentPage, setCurrentPage] = useState("login")
+  const [currentPage, setCurrentPage] = useState("landing-page")
   const [userRole, setUserRole] = useState(null)
+
+  const toLoginPage = ()=>{
+    setCurrentPage("login")
+  }
 
   const handleLogin = (role) => {
     setUserRole(role)
@@ -24,6 +29,8 @@ export default function ShikshaLite() {
 
   const renderCurrentPage = () => {
     switch (currentPage) {
+      case "landing-page":
+        return <LandingPage onLogin={toLoginPage} />
       case "login":
         return <LoginPage onLogin={handleLogin} />
       case "teacher-dashboard":
@@ -37,7 +44,7 @@ export default function ShikshaLite() {
           />
         )
       default:
-        return <LoginPage onLogin={handleLogin} />
+        return <LandingPage onLogin={toLoginPage} />
     }
   }
 

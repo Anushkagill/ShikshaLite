@@ -8,7 +8,7 @@ import {
   ClockIcon,
   UsersIcon,
   BookOpenIcon,
-  ArrowRightOnRectangleIcon, // replaced LogOutIcon with ArrowRightOnRectangleIcon
+  ArrowRightOnRectangleIcon, 
   HomeIcon,
   AcademicCapIcon,
   ChartBarIcon,
