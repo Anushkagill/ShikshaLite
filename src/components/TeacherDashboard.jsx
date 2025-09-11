@@ -18,8 +18,8 @@ export default function TeacherDashboard({ onJoinClass = () => {}, onLogout = ()
     },
     {
       id: 2,
-      subject: "Physics", 
-      topic: "Quantum Mechanics",
+      subject: "VLSI", 
+      topic: "Low Power Design Techniques",
       time: "2:00 PM",
       date: "Today",
       students: 18,
@@ -28,8 +28,8 @@ export default function TeacherDashboard({ onJoinClass = () => {}, onLogout = ()
     },
     {
       id: 3,
-      subject: "Chemistry",
-      topic: "Organic Compounds", 
+      subject: "Artificial Intelligence",
+      topic: "RAG", 
       time: "11:00 AM",
       date: "Tomorrow",
       students: 22,
@@ -38,8 +38,8 @@ export default function TeacherDashboard({ onJoinClass = () => {}, onLogout = ()
     },
     {
       id: 4,
-      subject: "Biology",
-      topic: "Cell Structure",
+      subject: "Blockchain",
+      topic: "Energy Trading",
       time: "3:00 PM", 
       date: "Tomorrow",
       students: 20,
